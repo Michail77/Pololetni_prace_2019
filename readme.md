@@ -1,7 +1,7 @@
 # Zaverecna prace
 
-------------Commit----------------
-cd desktop //dostaneš se na plochu
+------------Commit----------------  ;
+cd desktop //dostaneš se na plochu  ;
 git clone https://github... //stáhneš repo
 cd .. (SLOZKA) //vlezeš do repa
 git pull origin master //Aktualizuješ repo (z cloudu)

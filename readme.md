@@ -2,7 +2,7 @@
 
 ------------Commit----------------  
 cd desktop //dostaneš se na plochu  
-git clone https://github... //stáhneš repo  
+!!!!! JENOM KDYZ NEMAM SLOZKU !!!!! ---> git clone https://github... //stáhneš repo  
 cd .. (SLOZKA) //vlezeš do repa  
 git pull origin master //Aktualizuješ repo (z cloudu)  
   

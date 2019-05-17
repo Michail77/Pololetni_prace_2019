@@ -1,4 +1,4 @@
-# Zaverecna prace
+# Postup na commit
 
 ------------Commit----------------  
 cd desktop //dostaneš se na plochu  

@@ -1,0 +1,1 @@
+<resources><declare-styleable name="VusikAttr"><attr format="integer" name="fallCount" /><attr format="float" name="fallSpeed" /></declare-styleable><string name="app_name">VusikView</string></resources>

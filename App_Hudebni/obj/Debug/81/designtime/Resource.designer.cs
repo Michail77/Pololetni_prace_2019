@@ -2233,6 +2233,9 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F020052
 			public const int abc_vector_test = 2130837586;
 			
+			// aapt resource value: 0x7F010002
+			public const int Album = 2130771970;
+			
 			// aapt resource value: 0x7F090054
 			public const int avd_hide_password = 2131296340;
 			
@@ -2256,6 +2259,9 @@ namespace App_Hudebni
 			
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
+			
+			// aapt resource value: 0x7F010003
+			public const int Icon = 2130771971;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2302,17 +2308,17 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F02005E
 			public const int notify_panel_notification_icon_bg = 2130837598;
 			
-			// aapt resource value: 0x7F010002
-			public const int Pause = 2130771970;
-			
-			// aapt resource value: 0x7F010003
-			public const int Play = 2130771971;
-			
 			// aapt resource value: 0x7F010004
-			public const int Play_2 = 2130771972;
+			public const int Pause = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int Play_3 = 2130771973;
+			public const int Play = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int Play_2 = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int Play_3 = 2130771975;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2395,6 +2401,9 @@ namespace App_Hudebni
 			
 			// aapt resource value: 0x7F0A0013
 			public const int add = 2131361811;
+			
+			// aapt resource value: 0x7F020006
+			public const int Album = 2130837510;
 			
 			// aapt resource value: 0x7F0A003B
 			public const int alertTitle = 2131361851;

@@ -6,47 +6,58 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-	<RelativeLayout
-		android:layout_alignParentBottom="true"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
-		<TextView
-			android:id="@+id/Cas"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_centerHorizontal="true"
-			android:layout_alignLeft="@+id/Posuvnik"
-			android:text="0:00"
-			android:textColor="#ffcbcbcb"
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Cas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/Posuvnik"
+            android:text="0:00"
+            android:textColor="#ffcbcbcb"
 		/>
-		<TextView
-			android:id="@+id/Nazev"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_centerHorizontal="true"
-			android:text="Eminem"
-			android:textColor="#ff6cf6ff"
-			android:textStyle="bold"
-			android:textSize="16dp" 
-		/>
-
-		<SeekBar
-			android:id="@+id/Posuvnik"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_below="@id/Cas"
+        <TextView
+            android:id="@+id/Nazev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Eminem"
+            android:textColor="#ff6cf6ff"
+            android:textStyle="bold"
+            android:textSize="16dp" 
 		/>
 
-		<ImageButton
-			android:id="@+id/BTN_Spustit_Zastavit"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_below="@id/Posuvnik"
-			android:src="@drawable/Play_2"
-			android:layout_centerHorizontal="true"
-			android:background="#ffffffff" 
+        <SeekBar
+            android:id="@+id/Posuvnik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cas"
 		/>
 
+        <ImageButton
+            android:id="@+id/BTN_Spustit_Zastavit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Posuvnik"
+            android:src="@drawable/Play_2"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffffff" 
+		/>
 
-	</RelativeLayout>
+        <ImageView
+            android:id="@+id/Album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Album"
+            android:layout_above="@id/Nazev"
+        />
+
+
+
+
+    </RelativeLayout>
+
 </RelativeLayout>

@@ -260,7 +260,7 @@
   },
   "libraries": {
     "MusicView/1.1.0": {
-      "sha512": "GxAh0VJrNw+bmtoEmnlq4Qb0JHKic0+Hkn6QhSm98m9EAAK1laU1OS73J2aj8gHzv74x1TOD8BoqC3ugO2J4KA==",
+      "sha512": "FzjG6bZUHodV1uLSLi5kB81PtxuXvIInLTE23j1WFrJAH9/mWqyiMwfhdTQjMi932JFXbSYywMmtZC9+FRaTdw==",
       "type": "package",
       "path": "musicview/1.1.0",
       "files": [
@@ -618,21 +618,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\micha\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\App_Hudebni.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\App_Hudebni.csproj",
       "projectName": "App_Hudebni",
-      "projectPath": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\App_Hudebni.csproj",
-      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\App_Hudebni.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"

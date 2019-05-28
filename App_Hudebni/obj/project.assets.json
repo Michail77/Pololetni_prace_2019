@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "MusicView/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/monoandroid81/MusicView.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid81/MusicView.dll": {}
-        }
-      },
       "Xamarin.Android.Arch.Core.Common/1.1.1.1": {
         "type": "package",
         "dependencies": {
@@ -259,19 +250,6 @@
     }
   },
   "libraries": {
-    "MusicView/1.1.0": {
-      "sha512": "FzjG6bZUHodV1uLSLi5kB81PtxuXvIInLTE23j1WFrJAH9/mWqyiMwfhdTQjMi932JFXbSYywMmtZC9+FRaTdw==",
-      "type": "package",
-      "path": "musicview/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid71/MusicView.dll",
-        "lib/monoandroid81/MusicView.dll",
-        "musicview.1.1.0.nupkg.sha512",
-        "musicview.nuspec"
-      ]
-    },
     "Xamarin.Android.Arch.Core.Common/1.1.1.1": {
       "sha512": "3ijpoWgfyNeyUgbhLz4V/xAuizoz3h1Myg8Ioe1sCkl27Vl3lDN9SR30sFDDKcGgqQXJ4gtPOr9POCfvdPc63Q==",
       "type": "package",
@@ -612,7 +590,6 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
-      "MusicView >= 1.1.0",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.1"
     ]
@@ -655,10 +632,6 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
-          "MusicView": {
-            "target": "Package",
-            "version": "[1.1.0, )"
-          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[28.0.0.1, )"

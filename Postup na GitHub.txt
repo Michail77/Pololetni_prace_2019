@@ -1,0 +1,14 @@
+------------Commit----------------
+cd desktop //dostaneš se na plochu
+git clone https://github... //stáhneš repo
+cd .. (SLOZKA) //vlezeš do repa
+git pull origin master //Aktualizuješ repo (z cloudu)
+
+... //pracuješ
+
+(
+git add . //Pøidáš soubory do indexu
+git commit -m "Komitl sem to" //vytvoøíš commit
+)
+
+git push origin master //odešle na cloud

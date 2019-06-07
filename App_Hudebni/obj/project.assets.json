@@ -595,26 +595,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\micha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\App_Hudebni.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\App_Hudebni.csproj",
       "projectName": "App_Hudebni",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\App_Hudebni.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Pololetni_prace_2019\\App_Hudebni\\obj\\",
+      "projectPath": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\App_Hudebni.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micha\\Desktop\\App_Hudebni\\App_Hudebni\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"

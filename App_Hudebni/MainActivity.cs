@@ -21,7 +21,7 @@ namespace App_Hudebni
         public TextView Cas, Nazev;
         public MediaPlayer player;
 
-        public long DelkaHudby, RealnyCas;
+        public int DelkaHudby, RealnyCas;
 
         protected override void OnCreate(Bundle savedInstanceState) 
         {
@@ -36,7 +36,7 @@ namespace App_Hudebni
             //    ImageView imageView = FindViewById<ImageView>(Resource.Id.AlbumId);
             //    imageView.SetImageResource(Resource.Drawable.Album);
             //};
-
+            player = new MediaPlayer();
 
         }
 
@@ -49,7 +49,7 @@ namespace App_Hudebni
         }
     }
 
-    internal class SpustitHudbu : AsyncTask<string, string, string>
+    internal class SpustitHudbu : AsyncTask<string, string, string> //Aby přehrávání hudby mohlo běžet v pozadí, aby se hudba přehravala a zroven ukazovala posuvnik a cas
     {
         private MainActivity mainActivity;
 
@@ -60,7 +60,16 @@ namespace App_Hudebni
 
         protected override string RunInBackground(params string[] @params)
         {
-            throw new NotImplementedException();
+            try
+            {
+                mainActivity.player.SetDataSource(@params[0]); //Nastavi zdroj dat pro prehrani
+                mainActivity.player.Prepare(); //Připravi prehravac na prehravani
+            }
+            catch (Exception e)
+            {
+
+            }
+            return "";
         }
 
         protected override void OnPostExecute(string result) //Vykoname asynchronní task
@@ -95,10 +104,10 @@ namespace App_Hudebni
             mainActivity.Posuvnik.Progress = mainActivity.player.CurrentPosition;
         }
 
-        internal void Execute(string v)
-        {
-            throw new NotImplementedException();
-        }
+        //internal void Execute(string v)
+        //{
+        //    throw new Exception("Nejde");
+        //}
         
         
     }

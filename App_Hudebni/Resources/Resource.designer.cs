@@ -2230,26 +2230,26 @@ namespace App_Hudebni
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020070
-			public const int avd_hide_password_1 = 2130837616;
-			
-			// aapt resource value: 0x7f020071
-			public const int avd_hide_password_2 = 2130837617;
-			
 			// aapt resource value: 0x7f020072
-			public const int avd_hide_password_3 = 2130837618;
+			public const int avd_hide_password_1 = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int avd_hide_password_2 = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int avd_hide_password_3 = 2130837620;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020073
-			public const int avd_show_password_1 = 2130837619;
-			
-			// aapt resource value: 0x7f020074
-			public const int avd_show_password_2 = 2130837620;
-			
 			// aapt resource value: 0x7f020075
-			public const int avd_show_password_3 = 2130837621;
+			public const int avd_show_password_1 = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int avd_show_password_2 = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int avd_show_password_3 = 2130837623;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -2299,11 +2299,11 @@ namespace App_Hudebni
 			// aapt resource value: 0x7f020065
 			public const int notification_icon_background = 2130837605;
 			
-			// aapt resource value: 0x7f02006e
-			public const int notification_template_icon_bg = 2130837614;
+			// aapt resource value: 0x7f020070
+			public const int notification_template_icon_bg = 2130837616;
 			
-			// aapt resource value: 0x7f02006f
-			public const int notification_template_icon_low_bg = 2130837615;
+			// aapt resource value: 0x7f020071
+			public const int notification_template_icon_low_bg = 2130837617;
 			
 			// aapt resource value: 0x7f020066
 			public const int notification_tile_bg = 2130837606;
@@ -2315,19 +2315,25 @@ namespace App_Hudebni
 			public const int Pause = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int Play = 2130837609;
+			public const int pause1 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int Play_2 = 2130837610;
+			public const int Play = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int Play_3 = 2130837611;
+			public const int play1 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int tooltip_frame_dark = 2130837612;
+			public const int Play_2 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int tooltip_frame_light = 2130837613;
+			public const int Play_3 = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int tooltip_frame_dark = 2130837614;
+			
+			// aapt resource value: 0x7f02006f
+			public const int tooltip_frame_light = 2130837615;
 			
 			static Drawable()
 			{
@@ -2345,17 +2351,17 @@ namespace App_Hudebni
 			// aapt resource value: 0x7f080032
 			public const int ALT = 2131230770;
 			
-			// aapt resource value: 0x7f080090
-			public const int AlbumId = 2131230864;
+			// aapt resource value: 0x7f08008b
+			public const int AlbumId = 2131230859;
 			
-			// aapt resource value: 0x7f08008f
-			public const int BTN_Spustit_Zastavit = 2131230863;
+			// aapt resource value: 0x7f080090
+			public const int BTN_Spustit_Zastavit = 2131230864;
 			
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
 			
-			// aapt resource value: 0x7f08008c
-			public const int Cas = 2131230860;
+			// aapt resource value: 0x7f08008d
+			public const int Cas = 2131230861;
 			
 			// aapt resource value: 0x7f080034
 			public const int FUNCTION = 2131230772;
@@ -2363,11 +2369,11 @@ namespace App_Hudebni
 			// aapt resource value: 0x7f080035
 			public const int META = 2131230773;
 			
-			// aapt resource value: 0x7f08008e
-			public const int Nazev = 2131230862;
+			// aapt resource value: 0x7f08008f
+			public const int Nazev = 2131230863;
 			
-			// aapt resource value: 0x7f08008d
-			public const int Posuvnik = 2131230861;
+			// aapt resource value: 0x7f08008e
+			public const int Posuvnik = 2131230862;
 			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
@@ -2678,8 +2684,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7f080075
 			public const int radio = 2131230837;
 			
-			// aapt resource value: 0x7f08008b
-			public const int relativeLayout1 = 2131230859;
+			// aapt resource value: 0x7f08008c
+			public const int relativeLayout1 = 2131230860;
 			
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;

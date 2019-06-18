@@ -2297,13 +2297,19 @@ namespace App_Hudebni
 			public const int Pause = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int Play = 2130771973;
+			public const int pause1 = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int Play_2 = 2130771974;
+			public const int Play = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int Play_3 = 2130771975;
+			public const int play1 = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int Play_2 = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int Play_3 = 2130771977;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2387,8 +2393,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C0015
 			public const int add = 2131492885;
 			
-			// aapt resource value: 0x7F020007
-			public const int AlbumId = 2130837511;
+			// aapt resource value: 0x7F020002
+			public const int AlbumId = 2130837506;
 			
 			// aapt resource value: 0x7F0C0016
 			public const int alertTitle = 2131492886;
@@ -2405,8 +2411,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020006
-			public const int BTN_Spustit_Zastavit = 2130837510;
+			// aapt resource value: 0x7F020007
+			public const int BTN_Spustit_Zastavit = 2130837511;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2414,8 +2420,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
-			// aapt resource value: 0x7F020003
-			public const int Cas = 2130837507;
+			// aapt resource value: 0x7F020004
+			public const int Cas = 2130837508;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
@@ -2546,8 +2552,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020004
-			public const int Nazev = 2130837508;
+			// aapt resource value: 0x7F020005
+			public const int Nazev = 2130837509;
 			
 			// aapt resource value: 0x7F0C0048
 			public const int none = 2131492936;
@@ -2576,8 +2582,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
-			// aapt resource value: 0x7F020005
-			public const int Posuvnik = 2130837509;
+			// aapt resource value: 0x7F020006
+			public const int Posuvnik = 2130837510;
 			
 			// aapt resource value: 0x7F0C0051
 			public const int progress_circular = 2131492945;
@@ -2588,8 +2594,8 @@ namespace App_Hudebni
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
 			
-			// aapt resource value: 0x7F020002
-			public const int relativeLayout1 = 2130837506;
+			// aapt resource value: 0x7F020003
+			public const int relativeLayout1 = 2130837507;
 			
 			// aapt resource value: 0x7F0C0054
 			public const int right = 2131492948;

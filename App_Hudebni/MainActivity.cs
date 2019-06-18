@@ -21,7 +21,7 @@ namespace App_Hudebni
         public TextView Cas, Nazev;
         public MediaPlayer player;
 
-        public int DelkaHudby, RealnyCas;
+        public int DelkaHudby, RealnyCas, Minuty, Sekundy;
 
         protected override void OnCreate(Bundle savedInstanceState) 
         {
@@ -30,21 +30,23 @@ namespace App_Hudebni
 
             //Najdeme si objekty pomocí jejich ID (objekty které jsou v Layoutu např. tlacitka, view apod ....)
             BTN_Spustit_Zastavit = FindViewById<ImageButton>(Resource.Id.BTN_Spustit_Zastavit);
-            BTN_Spustit_Zastavit.SetOnClickListener(this); //Spuštění zpětného volání
+            BTN_Spustit_Zastavit.SetOnClickListener(this); //Spuštění metody z listeneru
             //BTN_Spustit_Zastavit.Click += delegate
             //{
-            //    ImageView imageView = FindViewById<ImageView>(Resource.Id.AlbumId);
+            //    var imageView = FindViewById<ImageView>(Resource.Id.AlbumId);
             //    imageView.SetImageResource(Resource.Drawable.Album);
             //};
             player = new MediaPlayer();
+            Posuvnik = FindViewById<SeekBar>(Resource.Id.Posuvnik);
+            Cas = FindViewById<TextView>(Resource.Id.Cas);
 
         }
 
-        public void OnClick(View v) //Co se stane po kliknutí ve view, v našem případě se přehraje hudba (mp3 soubor)
+        public void OnClick(View v) //Co se stane po kliknutí ve view, v našem případě se přehraje hudba 
         {
             if(v.Id == Resource.Id.BTN_Spustit_Zastavit)
             {
-                new SpustitHudbu(this).Execute("https://youtu.be/FxQTY-W6GIo"); //Přímý odkaz na hudbu která se spustí po stisknutí buttonu
+                new SpustitHudbu(this).Execute("http://tulak.host/song2.mp3"); //Přímý odkaz na hudbu která se spustí po stisknutí buttonu
             }
         }
     }
@@ -78,12 +80,12 @@ namespace App_Hudebni
             if (!mainActivity.player.IsPlaying) //Pokud se hudba neprehrava
             {
                 mainActivity.player.Start(); //prehrajeme ji 
-                mainActivity.BTN_Spustit_Zastavit.SetImageResource(Resource.Drawable.Pause); //Zmenime obrazek buttonu na pauzu
+                mainActivity.BTN_Spustit_Zastavit.SetImageResource(Resource.Drawable.pause1); //Zmenime obrazek buttonu na pauzu
             }
             else
             {
                 mainActivity.player.Pause(); //pauzneme ji 
-                mainActivity.BTN_Spustit_Zastavit.SetImageResource(Resource.Drawable.Play_2); //Zmenime obrazek buttonu na spusteni
+                mainActivity.BTN_Spustit_Zastavit.SetImageResource(Resource.Drawable.play1); //Zmenime obrazek buttonu na spusteni
             }
 
             PosouvaniPosuvniku();
@@ -93,10 +95,22 @@ namespace App_Hudebni
         {
             mainActivity.Posuvnik.Max = mainActivity.player.Duration;
             System.Timers.Timer timer = new System.Timers.Timer();
+            System.Timers.Timer timer1 = new System.Timers.Timer();
             timer.Interval = 10;
             timer.Elapsed += PozicePosuvniku;
             timer.Enabled = true;
-            mainActivity.Cas.Text = mainActivity.player.Duration.ToString();
+
+            timer1.Interval = 1000;
+            timer1.Elapsed += PricitaniSekundy;
+            timer1.Enabled = true;
+            //for (int i = 0; i == timer1.Equals; Sekundy++)
+
+        }
+
+        private void PricitaniSekundy(object sender, ElapsedEventArgs e)
+        {
+            mainActivity.Sekundy++;
+            mainActivity.Cas.Text = ("0:" + mainActivity.Sekundy);
         }
 
         private void PozicePosuvniku(object sender, System.Timers.ElapsedEventArgs e)

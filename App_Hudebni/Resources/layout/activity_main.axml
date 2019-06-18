@@ -8,6 +8,13 @@
     android:minWidth="25px"
     android:minHeight="25px">
 
+	<ImageView
+        android:id="@+id/AlbumId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Album"
+    />
+
     <RelativeLayout
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
@@ -19,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignLeft="@+id/Posuvnik"
-            android:text="0:00"
+            android:text=""
             android:textColor="#ffcbcbcb"
 		/>
         <TextView
@@ -45,18 +52,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Posuvnik"
-            android:src="@drawable/Play_2"
+            android:src="@drawable/play1"
             android:layout_centerHorizontal="true"
             android:background="#ffffffff" 
 		/>
 
-        <ImageView
-            android:id="@+id/AlbumId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/Nazev"
-            android:src="@drawable/Album"
-        />
+
+
 
 
 

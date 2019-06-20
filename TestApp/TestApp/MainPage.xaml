@@ -5,7 +5,7 @@
              x:Class="TestApp.MainPage">
 
     <StackLayout>
-        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray">
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
             <!-- Place new controls here -->
             <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
                 <Label Text="Hudebni Prehravac" />
@@ -18,9 +18,9 @@
             <Image Source="Album.jpg" WidthRequest="230" HeightRequest="170"></Image>
         </StackLayout>
 
-        <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
-            <Label Text="{Binding SongName} " HorizontalOptions="StartAndExpand"/>
-            <ImageButton Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
+        <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Aquamarine">
+            <Label Text="{Binding SongName}" FontSize="Large" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+            <ImageButton Margin="10,0,10,0"  Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
         </StackLayout>
 
         <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">

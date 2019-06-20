@@ -17,9 +17,9 @@
                 <Button BackgroundColor="Black" TextColor="White" WidthRequest="310" Text="{Binding ButtonText1}" Command="{Binding PlayClick2}" HorizontalOptions="Center"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
-                <Label Text="{Binding SongName}"/>
-                <ImageButton  Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Aquamarine">
+                <Label Text="{Binding SongName}" FontSize="Large" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                <ImageButton Margin="10,0,10,0"  Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
             </StackLayout>
 
             <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">

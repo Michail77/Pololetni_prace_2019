@@ -9,14 +9,25 @@ using System.Threading.Tasks;
 
 namespace TestApp.ViewModel
 {
-    class MainWindowViewModel
+    class MainWindowViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        private string _SongName { get; set; }
+        public string SongName
+        {
+            get { return _SongName; }
+            set { if (_SongName != value) { _SongName = value; if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs("SongName")); } } }
+        }
+        public string _ImageName { get; set; }
+        public string ImageName
+        {
+            get { return _ImageName; }
+            set { if (_ImageName != value) { _ImageName = value; if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs("ImageName")); } } }
+        }
         public Command DomuClick { get; }
         public Command PlaylistyClick { get; }
         public Command ButtonClick { get; }
-        public string SongName { get; set; }
         public string ButtonText { get; set; }
-        public string ImageName { get; set; }
         public MainPage sender;
         public MainWindowViewModel(MainPage sender)
         {

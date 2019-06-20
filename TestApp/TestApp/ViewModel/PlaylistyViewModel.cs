@@ -1,13 +1,27 @@
 ﻿using MediaManager;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 
 namespace TestApp.ViewModel
 {
-    class PlaylistyViewModel
+    class PlaylistyViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        private string _SongName { get; set; }
+        public string SongName
+        {
+            get { return _SongName; }
+            set { if (_SongName != value) { _SongName = value; if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs("SongName")); } } }
+        }
+        public string _ImageName { get; set; }
+        public string ImageName
+        {
+            get { return _ImageName; }
+            set { if (_ImageName != value) { _ImageName = value; if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs("ImageName")); } } }
+        }
         public Command DomuClick { get; }
         public Command PlaylistyClick { get; }
         public Command ButtonClick { get; }
@@ -17,8 +31,6 @@ namespace TestApp.ViewModel
         public string ButtonText1 { get; }
         public string[] playlist { get; }
         public string[] playlist2 { get; }
-        public string ImageName { get; set; }
-        public string SongName { get; set; }
 
         public MainPage sender;
 

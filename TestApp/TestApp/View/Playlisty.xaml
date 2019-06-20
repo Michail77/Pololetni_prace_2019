@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.View.Playlisty">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                <Label Text="Playlisty" />
+            </StackLayout>
+            <StackLayout Spacing="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Black">
+                <Image HorizontalOptions="End" VerticalOptions="FillAndExpand" Source="Album" WidthRequest="50" HeightRequest="50"></Image>
+                <Button BackgroundColor="Black" TextColor="White" WidthRequest="310" Text="{Binding ButtonText}" Command="{Binding PlayClick}" HorizontalOptions="End"/>
+            </StackLayout>
+
+            <StackLayout Spacing="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Black">
+                <Image HorizontalOptions="End" VerticalOptions="FillAndExpand" Source="Album2" WidthRequest="50" HeightRequest="50"></Image>
+                <Button BackgroundColor="Black" TextColor="White" WidthRequest="310" Text="{Binding ButtonText1}" Command="{Binding PlayClick2}" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
+                <Label Text="{Binding SongName}"/>
+                <ImageButton  Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                <!-- Place new controls here -->
+                <StackLayout Spacing="0" Orientation="Horizontal">
+                    <Button Text="Domů" Command="{Binding DomuClick}"/>
+                    <Button Text="Playlisty" Command="{Binding PlaylistyClick}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

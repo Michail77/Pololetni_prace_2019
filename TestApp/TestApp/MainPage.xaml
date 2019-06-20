@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestApp"
+             x:Class="TestApp.MainPage">
+
+    <StackLayout>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray">
+            <!-- Place new controls here -->
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Hudebni Prehravac" />
+            </StackLayout>
+
+
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Image Source="Album.jpg" WidthRequest="230" HeightRequest="170"></Image>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
+            <Label Text="{Binding SongName} " HorizontalOptions="StartAndExpand"/>
+            <ImageButton Source="{Binding ImageName}" WidthRequest="50" HeightRequest="50" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+            <!-- Place new controls here -->
+            <StackLayout Spacing="0" Orientation="Horizontal">
+                <Button Text="Domů" Command="{Binding DomuClick}"/>
+                <Button Text="Playlisty" Command="{Binding PlaylistyClick}"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
